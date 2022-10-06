@@ -93,10 +93,10 @@ const SkillList = () => {
     return (
         <div className="skill-list py-20">
             <div className="container">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 md:gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-5 md:gap-6">
                 {skill.map((listSkill) => 
                     <div  data-aos="fade-up" data-aos-duration="400" data-aos-delay={ listSkill.duration } className="card p-6 bg-lightDark cursor-pointer hover:bg-dark transition-all duration-300 flex justify-center gap-4 md:gap-6 items-center">
-                        <img src={listSkill.logo} className="h-10" alt={listSkill.name} />
+                        <img src={listSkill.logo} className="h-8 sm:h-10" alt={listSkill.name} />
                         <h1 className="text-white text-center" key={listSkill}>
                             {listSkill.name}
                         </h1>
